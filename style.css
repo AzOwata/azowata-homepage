@@ -1,31 +1,43 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("虚無.webp");
+  background-repeat: repeat;
+}
+
 header {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 header h1 {
-  float: left;
+  margin: 0;
 }
-
-nav {
+header nav {
   background-color: #444;
   color: #fff;
   padding: 1rem;
   text-align: center;
 }
-nav a {
+header nav ul {
+  list-style: none;
+}
+header nav a {
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
 }
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 

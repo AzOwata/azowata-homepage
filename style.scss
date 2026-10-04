@@ -4,33 +4,47 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('虚無.webp');
+    background-repeat: repeat;
+}
+
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     h1 {
-        float: left;
+        margin: 0;
     }
-}
-
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-
-    a {
+    
+    nav {
+        background-color: #444;
         color: #fff;
-        text-decoration: none;
-        margin: 0 1rem;
+        padding: 1rem;
+        text-align: center;
 
-        &:hover {
-            text-decoration: underline;
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
+
 
 main {
     padding: 2rem;
